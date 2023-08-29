@@ -20,12 +20,3 @@ export default async function DynamicPage({
     </main>
   );
 }
-
-export async function generateStaticParams() {
-  // Here we only pre-render the first dynamic page /dynamic/one
-  return [
-    {
-      text: DYNAMIC_TEXTS[0],
-    },
-  ];
-}
